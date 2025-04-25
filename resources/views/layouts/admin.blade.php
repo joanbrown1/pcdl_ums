@@ -162,8 +162,13 @@
                         </li>
                         <li class="slide">
                             <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('home')}}"><i
-                                        class="side-menu__icon fe fe-home"></i><span
+                                        class="side-menu__icon fe fe-search"></i><span
                                         class="side-menu__label">Search Users</span></a>
+                        </li>
+                        <li class="slide">
+                            <a class="side-menu__item has-link" data-bs-toggle="slide" href="{{route('password.change')}}"><i
+                                    class="side-menu__icon fe fe-user-check"></i><span
+                                    class="side-menu__label">Update User Password</span></a>
                         </li>
 {{--                        <li class="sub-category">--}}
 {{--                            <h3>Campaign Management</h3>--}}

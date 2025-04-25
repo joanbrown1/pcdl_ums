@@ -102,7 +102,8 @@
                                     {{ $userData['subscription_expiration'] ? \Carbon\Carbon::parse($userData['subscription_expiration'])->format('jS F, Y') : 'N/A' }}
                                 </span>
                                     </li>
-                                </ul>
+                                </ul><br/>
+                                <a href="{{ route('history',$userData['email']) }}" class="btn btn-success">See Transaction History</a>
                             </div>
                         </div>
                     </div>

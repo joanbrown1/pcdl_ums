@@ -25,4 +25,7 @@ Route::group(['middleware' => 'checkRole'], function () {
     Route::get('/', [MainController::class, 'home'])->name('home');
     Route::post('/search-user', [MainController::class, 'searchUser'])->name('search.user');
     Route::get('/user', [MainController::class, 'user'])->name('user');
+    Route::get('/password-change', [MainController::class, 'passwordChange'])->name('password.change');
+    Route::post('/update-password', [MainController::class, 'updatePassword'])->name('update.password');
+    Route::get('/history/{email?}', [MainController::class, 'history'])->name('history');
 });
